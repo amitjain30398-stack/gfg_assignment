@@ -235,6 +235,10 @@ section {
   text-align: center;
 }
 
+.details-container a{
+  font-size: 1.5rem;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;

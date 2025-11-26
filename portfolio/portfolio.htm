@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="stylesheet" href="animation.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header id="home">
+    <header id="top">
       <nav id="navbar">
         <div class="logo">Portfolio.</div>
         <div>
@@ -24,7 +26,7 @@
       </nav>
     </header>
     <section id="profile">
-      <div class="section_pic-container">
+      <div class="section_pic-container box">
         <img
           src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"
           alt="developers profile picture"
@@ -52,7 +54,7 @@
     </section>
     <section id="about">
       <h1 class="title">About Me</h1>
-      <div class="section-container">
+      <div class="section-container ">
         <div class="section__pic-container">
           <img
             src="https://images.pexels.com/photos/10856199/pexels-photo-10856199.jpeg"
@@ -185,10 +187,10 @@
       </div>
     </section>
     <footer>
-      <nav>
+      <nav class="footnav">
         <div class="nav-links-container">
           <ul class="navlist">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#project">Projects</a></li>
           </ul>

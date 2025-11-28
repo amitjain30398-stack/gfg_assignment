@@ -13,13 +13,21 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   section {
     margin: 0 5rem;
   }
 
   #profile {
-    gap: 10rem;
+    gap: 5rem;
+  }
+
+  .hero-title{
+    font-size: 3rem;
+  }
+
+  .hero-sub-title{
+    font-size: 1.5rem;
   }
 
   #project {

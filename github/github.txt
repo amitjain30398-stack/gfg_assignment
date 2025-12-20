@@ -21,6 +21,10 @@ It is used to create a new branch of the repo
 
 move to the mentioned branchname
 
-6) git merge
+6) git merge [branchname]
 
 It merges a branch to your current branch
+
+7) git push orgin [branchname]
+
+pushes the local repo to remote repo

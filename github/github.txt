@@ -19,4 +19,8 @@ It is used to create a new branch of the repo
 
 5) git checkout [branchname]
 
-move to the mentioned branch
+move to the mentioned branchname
+
+6) git merge
+
+It merges a branch to your current branch

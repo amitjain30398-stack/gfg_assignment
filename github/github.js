@@ -18,4 +18,6 @@
 
 // It is used to create a new branch of the repo
 
-// 5) git checkout
+// 5) git checkout [branchname]
+
+// move to the mentioned branch

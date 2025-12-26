@@ -1,30 +1,29 @@
 1) git init:
 
-It is used to initialise a git repo
-It creates a hidden folder name git in the directory
+It is used to initialize a git repository in your local system.
 
 2) git add [.] or [filename]:
 
-It is used to add files before commiting them. 
-[.] is used to add all file in the directory or you can specify a filename to add
+It is used to add the changes made in the working directory to the staging area. 
+Using [.] adds all the changes, while using [filename] adds only the specified file.   
 
 3) git commit -m"message":
 
-It is used to commit files in the git
-a brief message is added for that commit
+It is used to commit the changes made to the files in the staging area. 
+The message is used to describe the changes made in that commit.
 
 4) git branch [name]:
 
-It is used to create a new branch of the repo
+It is used to create a new branch with the specified name. 
 
 5) git checkout [branchname]
 
-move to the mentioned branchname
+It is used to switch from one branch to another branch.
 
 6) git merge [branchname]
 
-It merges a branch to your current branch
+It is used to merge the specified branch into the current branch.
 
-7) git push orgin [branchname]
+7) git push origin [branchname]
 
-pushes the local repo to remote repo
+It is used to push the changes made in the local repository to the remote repository on the specified branch.

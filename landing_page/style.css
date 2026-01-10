@@ -1,15 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f5f5f5;
+  --feature-bg: #f9f9f9;
+  --feature-card-bg: #ffffff;
+  --footer-bg: #f1f1f1;
+  --border-color: #e0e0e0;
+  --primary-color: #007bff;
+  --text-light: #fff;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #1e1e1e;
+  --feature-bg: #1a1a1a;
+  --feature-card-bg: #2a2a2a;
+  --footer-bg: #0a0a0a;
+  --border-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
-
-body {
-  line-height: 1.6;
-  color: #333;
 }
 
 /* Navigation Bar */
@@ -19,11 +36,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 nav {
   width: 100%;
-  background-color: #ffffff;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
@@ -43,7 +61,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 500;
@@ -52,16 +70,25 @@ nav {
   text-decoration: underline;
 }
 
+i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+i:hover {
+  color: #4eff02;
+}
+
 /* Banner / Hero Section */
 
 .hero {
   height: 90vh;
-  margin-top: 10px;
+  background-color: var(--bg-color);
 }
 .wrapper {
   height: 80vh;
   background: linear-gradient(to left, #066bc3, #2a1703);
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -69,6 +96,7 @@ nav {
   margin: 0 5rem;
   gap: 40px;
   border-radius: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .info-panel {
@@ -86,7 +114,9 @@ nav {
 
 input{
   font-size: 1.2rem;
-  border-radius: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
 }
 
 .signup-form {
@@ -126,10 +156,11 @@ input{
 
 /* Features Section */
 .features {
-  height: 50vh;
+  min-height: 50vh; /* Changed from height to min-height for responsiveness */
   padding: 60px 20px;
-  background: #f9f9f9;
+  background: var(--feature-bg);
   text-align: center;
+  color: var(--text-color);
 }
 
 .features h2 {
@@ -146,15 +177,16 @@ input{
 }
 
 .feature-card {
-  background: white;
+  background: var(--feature-card-bg);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
 }
 
 .feature-card h3 {
   margin-bottom: 15px;
-  color: #007bff;
+  color: var(--primary-color);
 }
 
 /* CTA Section */
@@ -188,6 +220,7 @@ input{
 footer {
   text-align: center;
   padding: 20px;
-  background: #f1f1f1;
+  background: var(--footer-bg);
+  color: var(--text-color);
   font-size: 0.9rem;
 }

@@ -2,36 +2,24 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-600 px-6 py-4 flex justify-center gap-8">
+    <nav className="bg-gray-600 px-6 py-4 flex justify-center gap-8">
       <NavLink
         to="/"
-        className={({ isActive }) =>
-          `text-white text-lg ${
-            isActive ? "font-bold underline" : "hover:underline"
-          }`
-        }
+        className="text-white text-lg"
       >
         Home
       </NavLink>
 
       <NavLink
         to="/about"
-        className={({ isActive }) =>
-          `text-white text-lg ${
-            isActive ? "font-bold underline" : "hover:underline"
-          }`
-        }
+        className="text-white text-lg"
       >
         About
       </NavLink>
 
       <NavLink
         to="/contact"
-        className={({ isActive }) =>
-          `text-white text-lg ${
-            isActive ? "font-bold underline" : "hover:underline"
-          }`
-        }
+        className="text-white text-lg"
       >
         Contact
       </NavLink>

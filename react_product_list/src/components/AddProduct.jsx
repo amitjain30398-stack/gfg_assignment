@@ -5,8 +5,11 @@ const AddProduct = ({ onAdd }) => {
   const [price, setPrice] = useState("");
 
   const handleAdd = () => {
-    if (!name || !price) return;
 
+    // returns if input field is empty
+    if (!name || !price) return;
+    
+    // calling addProduct (received from App.jsx) and passing product data to it
     onAdd({
       id: Date.now(),
       name,
@@ -21,13 +24,13 @@ const AddProduct = ({ onAdd }) => {
     <div className="space-y-2">
       <input
         className="border p-2 w-full"
-        placeholder="Product name"
+        placeholder="Product Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
         className="border p-2 w-full"
-        placeholder="Price"
+        placeholder="Product Price"
         type="number"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
